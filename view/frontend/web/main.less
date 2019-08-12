@@ -1,0 +1,30 @@
+.cms-landing-page {
+	section {
+		&.clin-cra-audit-notes .container {
+			// 2019-08-12
+			// "List the CRA Audit Notes in rows of 3 vs. 4
+			// so the thumbnail picture size can be enlarged
+			// and we can clearly see the phrase on the audit note while scrolling":
+			// https://github.com/clinessentials/core/issues/17
+			padding: 0 !important;
+			.product-single img {
+				// Decrease the space (as indicated in red) between the verbiage on the CRA Audit Notes
+				// and also under the Other Tools and Bundles sections: https://github.com/clinessentials/core/issues/19
+				// https://stackoverflow.com/a/493329
+				margin-bottom: -20%; margin-top: -22.5%;
+				// 2019-08-12
+				// "List the CRA Audit Notes in rows of 3 vs. 4
+				// so the thumbnail picture size can be enlarged
+				// and we can clearly see the phrase on the audit note while scrolling":
+				// https://github.com/clinessentials/core/issues/17
+				max-width: 272px;
+			}
+		}
+		// Decrease the space (as indicated in red) between the verbiage on the CRA Audit Notes
+		// and also under the Other Tools and Bundles sections: https://github.com/clinessentials/core/issues/19
+		// https://stackoverflow.com/a/493329
+		&.clin-bundles .product-single img {margin-bottom: -25%; margin-top: -45%;}
+		&.clin-other-tools .product-single img {margin-bottom: -16%; margin-top: -25%;}
+		.product-single {margin-top: 0;}
+	}
+}

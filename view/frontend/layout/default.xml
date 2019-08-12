@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<page 
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	xsi:noNamespaceSchemaLocation='urn:magento:framework:View/Layout/etc/page_configuration.xsd'
+>
+<!-- 2019-08-12
+This `styles-m` was broken and did not affect the website's appearance before my fixes:
+https://github.com/clinessentials/core/issues/1
+https://github.com/clinessentials/core/issues/2
+https://github.com/clinessentials/core/issues/3
+https://github.com/clinessentials/core/issues/4
+https://github.com/clinessentials/core/issues/5
+https://github.com/clinessentials/core/issues/6
+https://github.com/clinessentials/core/issues/7
+After the fixes, the file became valid and became affect the website's appearance,
+so I have disabled it in `vendor/magento/theme-frontend-blank/Magento_Theme/layout/default_head_blocks.xml`.
+I need to include my CSS manually, because `styles-l.css` is included with the rule:
+`<css src="css/styles-l.css" media="screen and (min-width: 768px)"/>`
+so it is not applied for screens narrower than 768px. -->
+	<head><css src='ClinEssentials_Core::main.css'/></head>
+</page>
