@@ -18,4 +18,5 @@ I need to include my CSS manually, because `styles-l.css` is included with the r
 `<css src="css/styles-l.css" media="screen and (min-width: 768px)"/>`
 so it is not applied for screens narrower than 768px. -->
 	<head><css src='ClinEssentials_Core::main.css'/></head>
+	<body><referenceContainer name='root'><block class='ClinEssentials\Core\Js'/></referenceContainer></body>
 </page>
