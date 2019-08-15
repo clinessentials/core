@@ -9,6 +9,6 @@
 		<referenceBlock name='customer-account-navigation-billing-agreements-link' remove='true'/>
 		<!-- 2019-08-15 "Remove the «My Wish List» item from the customer account menu"
 		https://github.com/clinessentials/core/issues/34 -->
-		<referenceBlock name='customer-account-navigation-wish-list-link' remove="true'/>
+		<referenceBlock name='customer-account-navigation-wish-list-link' remove='true'/>
 	</body>
 </page>
