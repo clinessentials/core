@@ -20,4 +20,15 @@ define(['jquery'], function($) {return function() {
 		var $e = $('nav.navbar #navbar');
 		$(document).click(function() {$e.removeClass('in');});
 	})();
+	// 2019-08-15
+	// "The «Back» browser's button on the frontend checkout page
+	// should lead the customer to the cart page from the first attempt
+	// (now it works only on the second attempt)":
+	// https://github.com/clinessentials/core/issues/45
+	$(window).on('hashchange', function(e) {
+		var o = e.originalEvent;
+		if (o.oldURL.endsWith('checkout/#shipping') && o.newURL.endsWith('checkout/')) {
+			window.location.pathname = '/checkout/cart/';
+		}
+	});
 }});
