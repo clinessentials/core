@@ -7,13 +7,21 @@
 // It is used by app/design/frontend/Magento/theme-frontend-luma-child/Magento_Theme/templates/html/copyright.phtml
 body {
 	&.page-print {
-		.clin-no-print {visibility: hidden;}
+		.clin-no-print, .secure {visibility: hidden;}
 		.clin-print {visibility: initial;}
 		// 2019-08-15
 		// 1) "Add the disclaimer to PDF invoices": https://github.com/clinessentials/core/issues/38
 		// 2) The design theme hides the `.disclaimer` block by default and shows it only on the home page.
 		// I have enabled the block for prints.
-		.disclaimer {display: block; background: #fff; padding: 30px 40px 19px;}
+		.disclaimer {
+			background: #fff;
+			display: block;
+			float: none;
+			padding: 30px 40px 19px;
+		}
+		// 2019-08-15 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
+		// «Add the return policy to PDF invoices»: https://github.com/clinessentials/core/issues/37
+		.return_policy {margin-bottom: 20px; width: 100%;}
 	}
 	&:not(.page-print) {
 		.clin-no-print {visibility: initial;}
