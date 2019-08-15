@@ -1,4 +1,9 @@
 body.cms-landing-page {
+	// 2019-08-15
+	// "Ensure that the «Tired of writing» phrase on a home page's slider always takes 2 lines instead of 3"
+	// https://github.com/clinessentials/core/issues/40
+	// The original rule is: `max-width: 750px;`
+	.banner-slider-text .carousel-caption {max-width: 800px;}
 	section {
 		&.clin-cra-audit-notes .container {
 			// 2019-08-12
