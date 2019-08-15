@@ -1,0 +1,17 @@
+// 2019-08-15
+// "The «pre-printed» word on a home page's slider should not be wrapped to another line"
+// https://github.com/clinessentials/core/issues/41
+.clin-no-wrap {font-family: inherit; font-weight: inherit; white-space: nowrap;}
+// 2019-08-15
+// I use this tecnhique to conditionally show/hide elements of already cached blocks.
+// It is used by app/design/frontend/Magento/theme-frontend-luma-child/Magento_Theme/templates/html/copyright.phtml
+body {
+	&.page-print {
+		.clin-no-print {visibility: hidden;}
+		.clin-print {visibility: initial;}
+	}
+	&:not(.page-print) {
+		.clin-no-print {visibility: initial;}
+		.clin-print {visibility: hidden;}
+	}
+}
