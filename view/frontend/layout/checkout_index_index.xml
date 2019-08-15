@@ -1,0 +1,46 @@
+<?xml version='1.0'?>
+<page
+	layout='checkout'
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	xsi:noNamespaceSchemaLocation='urn:magento:framework:View/Layout/etc/page_configuration.xsd'
+>
+	<body>
+		<referenceBlock name='checkout.root'>
+			<arguments>
+				<argument name='jsLayout' xsi:type='array'>
+					<item name='components' xsi:type='array'>
+						<item name='checkout' xsi:type='array'>
+							<item name='children' xsi:type='array'>
+								<item name='sidebar' xsi:type='array'>
+									<item name='children' xsi:type='array'>
+										<item name='summary' xsi:type='array'>
+											<item name='children' xsi:type='array'>
+												<item name='cart_items' xsi:type='array'>
+													<item name='children' xsi:type='array'>
+														<item name='details' xsi:type='array'>
+															<item name='children' xsi:type='array'>
+<!-- 2019-08-16
+1) "Provide an ability to delete items from the cart on the frontend checkout page":
+https://github.com/clinessentials/core/issues/47
+2) https://magento.stackexchange.com/a/261369 -->
+<item name='delete' xsi:type='array'>
+	<item name='component' xsi:type='string'>ClinEssentials_Core/subtotal/delete</item>
+	<item name='displayArea' xsi:type='string'>after_details</item>
+	<item name='sortOrder' xsi:type="number">999</item>
+</item>
+															</item>
+														</item>
+													</item>
+												</item>
+											</item>
+										</item>
+									</item>
+								</item>
+							</item>
+						</item>
+					</item>
+				</argument>
+			</arguments>
+		</referenceBlock>
+	</body>
+</page>

@@ -3,5 +3,12 @@
 	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
     xsi:noNamespaceSchemaLocation='urn:magento:framework:Module/etc/module.xsd'
 >
-	<module name='ClinEssentials_Core' setup_version='0.0.1'/>
+	<module name='ClinEssentials_Core' setup_version='0.0.1'>
+		<sequence>
+<!-- 2019-08-16
+"Provide an ability to delete items from the cart on the frontend checkout page":
+https://github.com/clinessentials/core/issues/47 -->
+			<module name='Magento_Checkout'/>
+		</sequence>
+	</module>
 </config>

@@ -2,8 +2,28 @@
 // "The product «eCRF» is incorrectly shown as «ECRF» On the cart page":
 // https://github.com/clinessentials/core/issues/51
 .checkout-cart-index .product-item-details .product-item-name a {text-transform: none;}
-// 2019-08-15
-// "The «Your transaction could not be completed at this time»
-// is incorrectly positioned on the frontend checkout page":
-// https://github.com/clinessentials/core/issues/31
-.checkout-index-index .modals-wrapper {display: none;}
+.checkout-index-index {
+	// 2019-08-15
+	// "The «Your transaction could not be completed at this time»
+	// is incorrectly positioned on the frontend checkout page":
+	// https://github.com/clinessentials/core/issues/31
+	.modals-wrapper {display: none;}
+	// 2019-08-15
+	// "Provide an ability to delete items from the cart on the frontend checkout page":
+	// https://github.com/clinessentials/core/issues/47
+	aside.modal-custom.opc-sidebar .modal-content .block.items-in-cart ol.minicart-items > li.product-item {
+		.subtotal {text-align: center; width: 45%;}
+		.clin-delete {
+			float: right;
+			margin: 0 auto;
+			width: 5%;
+			> a {
+				color: rgb(255, 108, 14);
+				display: block;
+				font-size: 60%;
+				font-weight: bold;
+				margin-top: 33%;
+			}
+		}
+	}
+}
