@@ -7,7 +7,6 @@ use Magento\Store\Model\ScopeInterface as IScope;
 /**
  * 2019-08-15
  * "Update the PDF invoice logo": https://github.com/clinessentials/core/issues/36
- * @used-by app/design/frontend/Magento/theme-frontend-luma-child/Magento_Theme/templates/html/copyright.phtml
  * @used-by app/design/frontend/Magento/theme-frontend-luma-child/Magento_Theme/templates/html/header/logo.phtml
  * @return bool
  */
@@ -19,7 +18,6 @@ function clin_is_print() {
 /**
  * 2019-08-15
  * "Update the PDF invoice logo": https://github.com/clinessentials/core/issues/36
- * @used-by app/design/frontend/Magento/theme-frontend-luma-child/Magento_Theme/templates/html/copyright.phtml
  * @used-by app/design/frontend/Magento/theme-frontend-luma-child/Magento_Theme/templates/html/header/logo.phtml
  * @return string
  */
