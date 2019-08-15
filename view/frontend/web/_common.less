@@ -9,6 +9,11 @@ body {
 	&.page-print {
 		.clin-no-print {visibility: hidden;}
 		.clin-print {visibility: initial;}
+		// 2019-08-15
+		// 1) "Add the disclaimer to PDF invoices": https://github.com/clinessentials/core/issues/38
+		// 2) The design theme hides the `.disclaimer` block by default and shows it only on the home page.
+		// I have enabled the block for prints.
+		.disclaimer {display: block; background: #fff; padding: 30px 40px 19px;}
 	}
 	&:not(.page-print) {
 		.clin-no-print {visibility: initial;}
