@@ -1,0 +1,17 @@
+<?xml version='1.0'?>
+<config
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	xsi:noNamespaceSchemaLocation='urn:magento:framework:Event/etc/events.xsd'
+>
+<!-- 2019-08-16
+"Clear the saved cart contents when the customer is signed in":
+https://github.com/clinessentials/core/issues/42
+https://magento.stackexchange.com/a/19868
+@used-by \Magento\Quote\Model\Quote::merge() -->
+	<event name='sales_quote_merge_before'>
+		<observer
+			instance='ClinEssentials\Core\Observer\SalesQuoteMergeBefore'
+			name='ClinEssentials\Core\Observer\SalesQuoteMergeBefore'
+		/>
+	</event> 
+</config>
