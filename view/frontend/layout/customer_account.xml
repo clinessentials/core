@@ -4,11 +4,19 @@
 	xsi:noNamespaceSchemaLocation='urn:magento:framework:View/Layout/etc/page_configuration.xsd'
 >
 	<body>
-		<!-- 2019-08-15 "Remove the «Billing Agreements» item from the customer account menu"
-		https://github.com/clinessentials/core/issues/33 -->
+<!-- 2019-08-15
+"Remove the «Billing Agreements» item from the customer account menu"
+https://github.com/clinessentials/core/issues/33 -->
 		<referenceBlock name='customer-account-navigation-billing-agreements-link' remove='true'/>
-		<!-- 2019-08-15 "Remove the «My Wish List» item from the customer account menu"
-		https://github.com/clinessentials/core/issues/34 -->
+<!-- 2019-08-15
+"Remove the «My Wish List» item from the customer account menu"
+https://github.com/clinessentials/core/issues/34 -->
 		<referenceBlock name='customer-account-navigation-wish-list-link' remove='true'/>
+<!-- 2019-08-15
+1) "Remove the «Submit a Question» item from the customer account menu"
+https://github.com/clinessentials/core/issues/35
+2) The link is added here:
+app/design/frontend/Magento/theme-frontend-luma-child/Magento_Customer/layout/customer_account.xml -->
+		<referenceBlock name='customer-account-navigation-wishlist-link' remove='true'/>
 	</body>
 </page>
