@@ -1,11 +1,9 @@
-.checkout-index-index {
-	// 2019-08-15
-	// "The «Your transaction could not be completed at this time»
-	// is incorrectly positioned on the frontend checkout page":
-	// https://github.com/clinessentials/core/issues/31
-	.modals-wrapper {display: none;}
-	// 2019-08-15
-	// "The product «eCRF» is incorrectly shown as «ECRF» On the cart page":
-	// https://github.com/clinessentials/core/issues/51
-	.product-item-details .product-item-name a {text-transform: none;}
-}
+// 2019-08-15
+// "The product «eCRF» is incorrectly shown as «ECRF» On the cart page":
+// https://github.com/clinessentials/core/issues/51
+.checkout-cart-index .product-item-details .product-item-name a {text-transform: none;}
+// 2019-08-15
+// "The «Your transaction could not be completed at this time»
+// is incorrectly positioned on the frontend checkout page":
+// https://github.com/clinessentials/core/issues/31
+.checkout-index-index .modals-wrapper {display: none;}
