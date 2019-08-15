@@ -13,4 +13,11 @@ define(['jquery'], function($) {return function() {
 			$hidden.css('display', open ? 'block' : 'none');
 		});
 	})();
+	// 2019-08-15
+	// "Hide the hamburger menu on a mouse click outside of it"
+	// https://github.com/clinessentials/core/issues/43
+	(function() {
+		var $e = $('nav.navbar #navbar');
+		$(document).click(function() {$e.removeClass('in');});
+	})();
 }});
