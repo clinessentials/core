@@ -3,7 +3,6 @@ A custom module for [clinessentials.com](https://www.clinessentials.com) (Magent
 ## How to install
 ```
 bin/magento maintenance:enable
-rm -rf composer.lock
 composer clear-cache
 composer require clinessentials/core:*
 bin/magento setup:upgrade
@@ -26,7 +25,6 @@ bin/magento cache:enable
 ```
 bin/magento maintenance:enable
 composer remove clinessentials/core
-rm -rf composer.lock
 composer clear-cache
 composer require clinessentials/core:*
 bin/magento setup:upgrade
