@@ -1,0 +1,11 @@
+<?xml version='1.0'?>
+<page
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	xsi:noNamespaceSchemaLocation='urn:magento:framework:View/Layout/etc/page_configuration.xsd'
+>
+	<body>
+		<!-- 2019-08-15 "Remove the «Billing Agreements» item from the customer account menu"
+		https://github.com/clinessentials/core/issues/33 -->
+		<referenceBlock name='customer-account-navigation-billing-agreements-link' remove='true'/>
+	</body>
+</page>
