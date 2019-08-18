@@ -26,4 +26,25 @@
 			}
 		}
 	}
+	// 2019-08-19
+	// "Add a checkout agreement:
+	// «By placing this order, you agree to the Privacy Statement and Terms of Services»":
+	// https://github.com/clinessentials/core/issues/56
+	.checkout-payment-method .payment-method-content {
+		button.action.primary.checkout {margin-top: 0.5em !important;}
+		.checkout-agreements-block {
+			margin-top: 0.75em;
+			.checkout-agreement {
+				> button {
+					background: transparent;
+					color: rgb(51, 51, 51);
+					cursor: auto;
+					a {
+						color: #FF6C0E; font-weight: 600;
+						&:hover {color: #333}
+					}
+				}
+			}
+		}
+	}
 }
